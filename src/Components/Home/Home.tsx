@@ -5,9 +5,8 @@ const Home = () => {
         <div className="hero">
           <h1>Create. Share. Collaborate.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
-            voluptatum quidem quos quas nesciunt. Quisquam, quae. Quisquam
+            Create taskboards, share em and collabaorate with your team-mates in
+            real-time.
           </p>
         </div>
       </div>

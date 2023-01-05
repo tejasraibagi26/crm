@@ -2,16 +2,20 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Home from "./Pages/Home";
+import HomePage from "./Pages/HomePage";
+import AuthPage from "./Pages/AuthPage";
+import DashboardPage from "./Pages/DashboardPage";
 
 function App() {
-  const [auth, setAuth] = useState<Boolean>(false);
+  const [auth, setAuth] = useState<Boolean>(true);
 
   return (
     <Router>
       <Navbar auth={auth} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/auth/:authType" element={<AuthPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
   );

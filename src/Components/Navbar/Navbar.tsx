@@ -7,7 +7,11 @@ const Navbar = (props: any) => {
   return (
     <header>
       <nav>
-        <div className="brand">Task</div>
+        <div className="brand">
+          <Link to={"/"} className="brand">
+            Tasko
+          </Link>
+        </div>
         {props.auth ? renderAuth() : renderUnAuth()}
       </nav>
       <div className="bars" onClick={operateNav}>
@@ -22,7 +26,7 @@ const Navbar = (props: any) => {
 const renderAuth = () => {
   return (
     <div className="links">
-      <Link to={"/"}>Dashboard</Link>
+      <Link to={"/dashboard"}>Dashboard</Link>
       <Link to={"/"}>Settings</Link>
       <Link to={"/"}>Account</Link>
     </div>
@@ -32,11 +36,11 @@ const renderAuth = () => {
 const renderUnAuth = () => {
   return (
     <div className="links">
-      <Link to={"/"} className="btn">
+      <Link to={"/auth/login"} className="btn">
         Login
       </Link>
-      <Link to={"/"} className="btn btn-secondary">
-        Sign Up
+      <Link to={"/auth/register"} className="btn btn-secondary">
+        Register
       </Link>
     </div>
   );

@@ -27,7 +27,7 @@ nav {
 .brand {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 
