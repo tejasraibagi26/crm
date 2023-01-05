@@ -3,6 +3,7 @@ import { AiFillSetting, AiOutlineShareAlt } from "react-icons/ai";
 import dummy from "../../assets/task.json";
 import { ITaskBoard } from "../../Interfaces";
 import "./dashboard.css";
+import RichTextEditor from "./Editor";
 
 const Dashboard = () => {
   const [activeBoard, setActiveBoard] = useState<ITaskBoard>();
@@ -38,8 +39,8 @@ const Dashboard = () => {
             New Board
           </div>
         </div>
-        <div className="content">
-          {activeBoard && (
+        {activeBoard && (
+          <div className="content">
             <div className="topbar">
               <div className="board-name">{activeBoard.name}</div>
               <div className="board-settings">
@@ -47,8 +48,10 @@ const Dashboard = () => {
                 <AiFillSetting className="icon" title="Settings" />
               </div>
             </div>
-          )}
-        </div>
+
+            <RichTextEditor />
+          </div>
+        )}
       </div>
     </section>
   );

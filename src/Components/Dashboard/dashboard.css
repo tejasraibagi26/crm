@@ -54,6 +54,7 @@
   width: 100%;
   height: calc(100% - 1rem);
   display: flex;
+  flex-direction: column;
 }
 
 .topbar {

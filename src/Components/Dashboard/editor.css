@@ -1,0 +1,37 @@
+.rich-text-editor {
+  position: relative;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar button {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+  margin-right: 4px;
+  color: #333;
+}
+
+.toolbar button.active {
+  color: blue;
+}
+
+.editor {
+  margin-top: 100px;
+  min-height: 300px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid white;
+  cursor: text;
+  color: white;
+}
