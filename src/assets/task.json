@@ -1,0 +1,22 @@
+{
+  "boards": [
+    {
+      "id": "1",
+      "name": "Board 1",
+      "description": "Board 1 description",
+      "createdAt": "2019-01-01T00:00:00.000Z",
+      "updatedAt": "2019-01-01T00:00:00.000Z",
+      "createdBy": "1",
+      "lastUpdatedBy": "172-282-292",
+      "users": [
+        {
+          "id": "1",
+          "name": "User 1",
+          "email": "user@user.com"
+        }
+      ],
+      "owner": "1",
+      "inviteLink": "http://localhost:5173/boards/invite?code=1"
+    }
+  ]
+}

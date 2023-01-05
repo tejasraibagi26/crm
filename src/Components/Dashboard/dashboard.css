@@ -17,6 +17,7 @@
 
 .sidebar .title {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .sidebar .board-lists {
@@ -32,8 +33,9 @@
 
 .sidebar .board-lists .board {
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   padding: 0.5rem;
+  text-overflow: ellipsis;
   border-radius: var(--border-radius);
 }
 
@@ -44,4 +46,35 @@
 
 .sidebar .board-lists::-webkit-scrollbar {
   display: none;
+}
+
+/**/
+
+.content {
+  width: 100%;
+  height: calc(100% - 1rem);
+  display: flex;
+}
+
+.topbar {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.board-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.topbar .board-settings {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }

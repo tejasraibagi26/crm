@@ -2,9 +2,9 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import HomePage from "./Pages/HomePage";
 import AuthPage from "./Pages/AuthPage";
 import DashboardPage from "./Pages/DashboardPage";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   const [auth, setAuth] = useState<Boolean>(true);
